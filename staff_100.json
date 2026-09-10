@@ -7,7 +7,7 @@
     "bio": "مقام برتر مسابقات ملی باریستا، داور سنسوری، مدرس آکادمی قهوه و هدباریستای سام کافه.",
     "followers": "115K",
     "engagement": "7.8%",
-    "avatar": "avatars/staff_soroush_salavati.svg"
+    "avatar": "avatars/staff_soroush_salavati.jpg"
   },
   {
     "name": "مسعود خلیل‌زاد",
@@ -17,7 +17,7 @@
     "bio": "متخصص برشته‌کاری دانه‌های تک‌خاستگاه، طراحی پروفایل‌های رست و مشاور راه‌اندازی رسترها.",
     "followers": "85K",
     "engagement": "6.9%",
-    "avatar": "avatars/staff_masoud_khalilzad.svg"
+    "avatar": "avatars/staff_masoud_khalilzad.jpg"
   },
   {
     "name": "نیما احمدی",
@@ -27,7 +27,7 @@
     "bio": "مدرس اصول میزبانی، مدیریت ارتباط با مشتری در کافه‌رستوران‌های زنجیره‌ای و استانداردهای سرویس‌دهی.",
     "followers": "42K",
     "engagement": "5.8%",
-    "avatar": "avatars/staff_nima_ahmadi_waiter.svg"
+    "avatar": "avatars/staff_nima_ahmadi_waiter.jpg"
   },
   {
     "name": "سارا کریمی",
@@ -37,7 +37,7 @@
     "bio": "کارشناس ارزیابی حسی قهوه (Q Grader)، مربی تفکیک نوت‌های طعمی و فرآوری تخصصی قهوه.",
     "followers": "68K",
     "engagement": "6.4%",
-    "avatar": "avatars/staff_sara_karimi_coffee.svg"
+    "avatar": "avatars/staff_sara_karimi_coffee.jpg"
   },
   {
     "name": "حمیدرضا رضایی",
@@ -47,7 +47,7 @@
     "bio": "قهرمان مسابقات کشوری لاته آرت، طراح پترن‌های پیچیده و باریستای ارشد در کافه‌های موج سوم.",
     "followers": "92K",
     "engagement": "8.2%",
-    "avatar": "avatars/staff_hamid_barista_art.svg"
+    "avatar": "avatars/staff_hamid_barista_art.jpg"
   },
   {
     "name": "پرهام پورحسینی",
@@ -57,7 +57,7 @@
     "bio": "مشاور صنعتی برشته‌کاری، کنترل کیفیت دانه و انتخاب قهوه‌های مزارع آمریکای لاتین و آفریقا.",
     "followers": "55K",
     "engagement": "6.1%",
-    "avatar": "avatars/staff_parham_roasting_lab.svg"
+    "avatar": "avatars/staff_parham_roasting_lab.jpg"
   },
   {
     "name": "مریم سعیدی",
@@ -67,7 +67,7 @@
     "bio": "مدیریت و مهندسی منو، کنترل کاست و آموزش منابع انسانی برای کافه‌رستوران‌های مدرن پایتخت.",
     "followers": "48K",
     "engagement": "5.5%",
-    "avatar": "avatars/staff_maryam_cafe_manager.svg"
+    "avatar": "avatars/staff_maryam_cafe_manager.jpg"
   },
   {
     "name": "علیرضا کمالی",
@@ -77,7 +77,7 @@
     "bio": "تمرکز بر سایفون، اروپرس، V60 و کمکس، ارائه کارگاه‌های عملی عصاره‌گیری قهوه تخصصی.",
     "followers": "63K",
     "engagement": "7.1%",
-    "avatar": "avatars/staff_alireza_brewing.svg"
+    "avatar": "avatars/staff_alireza_brewing.jpg"
   },
   {
     "name": "نگین شمس",
@@ -87,7 +87,7 @@
     "bio": "خلق تارت‌های نوین فرانسوی، کروسان‌های خمیرترش آرتسان و کیک‌های دسری متناسب با قهوه.",
     "followers": "120K",
     "engagement": "8.5%",
-    "avatar": "avatars/staff_negin_pastry_chef.svg"
+    "avatar": "avatars/staff_negin_pastry_chef.jpg"
   },
   {
     "name": "دانیال جعفری",
@@ -97,7 +97,7 @@
     "bio": "استانداردسازی پذیرایی، روانشناسی ارتباط با مشتری و آموزش زبان بدن برای پرسنل سالن کافه.",
     "followers": "35K",
     "engagement": "5.2%",
-    "avatar": "avatars/staff_danial_headwaiter.svg"
+    "avatar": "avatars/staff_danial_headwaiter.jpg"
   },
   {
     "name": "آرش قهوه‌چی",
@@ -107,7 +107,7 @@
     "bio": "هدباریستا با سابقه آموزش بیش از ۲۰۰ هنرجو در متدهای اسپرسو و فوم شیر.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_arash_baristapro.svg"
+    "avatar": "avatars/staff_arash_baristapro.jpg"
   },
   {
     "name": "کیان ناصری",
@@ -117,7 +117,7 @@
     "bio": "برشته‌کاری دانه‌های قهوه تخصصی و کنترل TDS و متغیرهای عصاره‌گیری.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_kian_roaster_ir.svg"
+    "avatar": "avatars/staff_kian_roaster_ir.jpg"
   },
   {
     "name": "سینا میرزایی",
@@ -127,7 +127,7 @@
     "bio": "متخصص بارهای موج سوم، دم‌آوری کلدبرو با متدهای نیتروژنی.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_sina_brewmaster.svg"
+    "avatar": "avatars/staff_sina_brewmaster.jpg"
   },
   {
     "name": "مهدی شجاعی",
@@ -137,7 +137,7 @@
     "bio": "مدیر عملیات و بهینه‌سازی زنجیره تأمین مواد اولیه کافه‌های زنجیره‌ای.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_mehdi_cafe_ops.svg"
+    "avatar": "avatars/staff_mehdi_cafe_ops.jpg"
   },
   {
     "name": "فرهاد یوسفی",
@@ -147,7 +147,7 @@
     "bio": "طراحی ماکتل‌های ترکیبی ارگانیک و نوشیدنی‌های لایه‌ای بار سرد.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_farhad_bartender_fa.svg"
+    "avatar": "avatars/staff_farhad_bartender_fa.jpg"
   },
   {
     "name": "حسین مرادی",
@@ -157,7 +157,7 @@
     "bio": "باریستای مجرب در زمینه کالیبراسیون آسیاب‌ها و کنترل دمای آب عصاره‌گیری.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_hossein_barista_lab.svg"
+    "avatar": "avatars/staff_hossein_barista_lab.jpg"
   },
   {
     "name": "نوید کاظمی",
@@ -167,7 +167,7 @@
     "bio": "آزمایشگر عطر و طعم دانه‌های قهوه کلمبیا و اتیوپی با ماشین‌های پروبات.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_navid_roastery.svg"
+    "avatar": "avatars/staff_navid_roastery.jpg"
   },
   {
     "name": "کامران راد",
@@ -177,7 +177,7 @@
     "bio": "مسلط به آداب پذیرایی بین‌المللی و مدیریت سالن در ساعات اوج شلوغی کافه.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_kamran_leadwaiter.svg"
+    "avatar": "avatars/staff_kamran_leadwaiter.jpg"
   },
   {
     "name": "رضا صابری",
@@ -187,7 +187,7 @@
     "bio": "داور مسابقات جذوه و ایبریک و قهوه دمی، ارائه‌دهنده مقالات آموزشی قهوه.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_reza_coffee_judge.svg"
+    "avatar": "avatars/staff_reza_coffee_judge.jpg"
   },
   {
     "name": "بابک توکلی",
@@ -197,7 +197,7 @@
     "bio": "تعمیر و نگهداری تخصصی ماشین‌های اسپرسو لامارزوکو و سیمونلی.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_babak_coffeetech.svg"
+    "avatar": "avatars/staff_babak_coffeetech.jpg"
   },
   {
     "name": "علیرضا رستمی",
@@ -207,7 +207,7 @@
     "bio": "طراحی خلاقانه پترن‌های لاته آرت و آموزش هنر شیر و فوم مخملی.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_alireza_latteart.svg"
+    "avatar": "avatars/staff_alireza_latteart.jpg"
   },
   {
     "name": "امیرحسین عباسی",
@@ -217,7 +217,7 @@
     "bio": "کاپینگ تخصصی، انتخاب بارهای برتر قهوه و ارزیابی عیوب دانه‌های سبز.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_amir_cupping_pro.svg"
+    "avatar": "avatars/staff_amir_cupping_pro.jpg"
   },
   {
     "name": "پویا فرهمند",
@@ -227,7 +227,7 @@
     "bio": "مهارت در کنترل سفارشات تبلتی، سرعت عمل و رضایت‌سنجی میهمانان کافه.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_pouya_waiter_lead.svg"
+    "avatar": "avatars/staff_pouya_waiter_lead.jpg"
   },
   {
     "name": "مائده نوری",
@@ -237,7 +237,7 @@
     "bio": "باریستای پیشرو در کافه‌های پایتخت، مسلط به زبان‌های خارجی برای میزبانی توریست‌ها.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_maedeh_barista_girl.svg"
+    "avatar": "avatars/staff_maedeh_barista_girl.jpg"
   },
   {
     "name": "رویا افشار",
@@ -247,7 +247,7 @@
     "bio": "پخت روزانه رول‌های دارچینی، وافل‌های بلژیکی و دسرهای ارگانیک کافه.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_roya_pastry_lab.svg"
+    "avatar": "avatars/staff_roya_pastry_lab.jpg"
   },
   {
     "name": "ندا ابراهیمی",
@@ -257,7 +257,7 @@
     "bio": "مشاوره برندینگ، چیدمان ارگونومیک بار کافه و آموزش تخصصی استاف.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_neda_cafe_consultant.svg"
+    "avatar": "avatars/staff_neda_cafe_consultant.jpg"
   },
   {
     "name": "مهسا زمانی",
@@ -267,7 +267,7 @@
     "bio": "تسلط کامل بر کار با ابزارهای مدرن بار گرم و قهوه‌نوشی تخصصی.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_mahsa_barista_art.svg"
+    "avatar": "avatars/staff_mahsa_barista_art.jpg"
   },
   {
     "name": "سحر صادقی",
@@ -277,7 +277,7 @@
     "bio": "خلق اسمارت‌درینک‌ها و سوداهای میوه‌ای دست‌ساز با متدهای گازتزریق.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_sahar_mixology.svg"
+    "avatar": "avatars/staff_sahar_mixology.jpg"
   },
   {
     "name": "فاطمه میرزایی",
@@ -287,7 +287,7 @@
     "bio": "پخت تخصصی کروسان بادام و نان‌های باگت فرانسوی برای برانچ کافه.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_fatemeh_baker_cafe.svg"
+    "avatar": "avatars/staff_fatemeh_baker_cafe.jpg"
   },
   {
     "name": "غزاله طاهری",
@@ -297,7 +297,7 @@
     "bio": "تحلیل ارگانولپتیک، تفکیک اسیدیته و بادی انواع قهوه‌های عربیکا و روبوستا.",
     "followers": "45K",
     "engagement": "6.5%",
-    "avatar": "avatars/staff_ghazaleh_sensory.svg"
+    "avatar": "avatars/staff_ghazaleh_sensory.jpg"
   },
   {
     "name": "طناز لاته",
@@ -307,7 +307,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_طناز_لاته_1.svg"
+    "avatar": "avatars/staff_barista_طناز_لاته_1.jpg"
   },
   {
     "name": "بهاره میزبانی",
@@ -317,7 +317,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_بهاره_میزبانی_2.svg"
+    "avatar": "avatars/staff_barista_بهاره_میزبانی_2.jpg"
   },
   {
     "name": "شبنم طعم‌یاب",
@@ -327,7 +327,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_شبنم_طعمیاب_3.svg"
+    "avatar": "avatars/staff_barista_شبنم_طعمیاب_3.jpg"
   },
   {
     "name": "الهام قهوه",
@@ -337,7 +337,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_الهام_قهوه_4.svg"
+    "avatar": "avatars/staff_barista_الهام_قهوه_4.jpg"
   },
   {
     "name": "پریا باریستالیدی",
@@ -347,7 +347,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پریا_باریستالیدی_5.svg"
+    "avatar": "avatars/staff_barista_پریا_باریستالیدی_5.jpg"
   },
   {
     "name": "تینا کافه‌منجر",
@@ -357,7 +357,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_تینا_کافهمنجر_6.svg"
+    "avatar": "avatars/staff_barista_تینا_کافهمنجر_6.jpg"
   },
   {
     "name": "هستی سالن",
@@ -367,7 +367,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_هستی_سالن_7.svg"
+    "avatar": "avatars/staff_barista_هستی_سالن_7.jpg"
   },
   {
     "name": "کتایون کژوال",
@@ -377,7 +377,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_کتایون_کژوال_8.svg"
+    "avatar": "avatars/staff_barista_کتایون_کژوال_8.jpg"
   },
   {
     "name": "مونا باریستا",
@@ -387,7 +387,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مونا_باریستا_9.svg"
+    "avatar": "avatars/staff_barista_مونا_باریستا_9.jpg"
   },
   {
     "name": "پریناز اسپشیالتی",
@@ -397,7 +397,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پریناز_اسپشیالتی_10.svg"
+    "avatar": "avatars/staff_barista_پریناز_اسپشیالتی_10.jpg"
   },
   {
     "name": "افسانه رستر",
@@ -407,7 +407,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_افسانه_رستر_11.svg"
+    "avatar": "avatars/staff_barista_افسانه_رستر_11.jpg"
   },
   {
     "name": "صبا ویترس",
@@ -417,7 +417,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_صبا_ویترس_12.svg"
+    "avatar": "avatars/staff_barista_صبا_ویترس_12.jpg"
   },
   {
     "name": "نسیم دم‌آوری",
@@ -427,7 +427,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_نسیم_دمآوری_13.svg"
+    "avatar": "avatars/staff_barista_نسیم_دمآوری_13.jpg"
   },
   {
     "name": "فرناز بارمن",
@@ -437,7 +437,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_فرناز_بارمن_14.svg"
+    "avatar": "avatars/staff_barista_فرناز_بارمن_14.jpg"
   },
   {
     "name": "عسل باریستا",
@@ -447,7 +447,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_عسل_باریستا_15.svg"
+    "avatar": "avatars/staff_barista_عسل_باریستا_15.jpg"
   },
   {
     "name": "سپیده کاپینگر",
@@ -457,7 +457,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_سپیده_کاپینگر_16.svg"
+    "avatar": "avatars/staff_barista_سپیده_کاپینگر_16.jpg"
   },
   {
     "name": "مهتا چای‌شناس",
@@ -467,7 +467,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مهتا_چایشناس_17.svg"
+    "avatar": "avatars/staff_barista_مهتا_چایشناس_17.jpg"
   },
   {
     "name": "روژین سالن‌دار",
@@ -477,7 +477,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_روژین_سالندار_18.svg"
+    "avatar": "avatars/staff_barista_روژین_سالندار_18.jpg"
   },
   {
     "name": "سیمین لاته",
@@ -487,7 +487,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_سیمین_لاته_19.svg"
+    "avatar": "avatars/staff_barista_سیمین_لاته_19.jpg"
   },
   {
     "name": "آوا کافه‌بان",
@@ -497,7 +497,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_آوا_کافهبان_20.svg"
+    "avatar": "avatars/staff_barista_آوا_کافهبان_20.jpg"
   },
   {
     "name": "مروارید رستر",
@@ -507,7 +507,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مروارید_رستر_21.svg"
+    "avatar": "avatars/staff_barista_مروارید_رستر_21.jpg"
   },
   {
     "name": "آیدا ویتر",
@@ -517,7 +517,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_آیدا_ویتر_22.svg"
+    "avatar": "avatars/staff_barista_آیدا_ویتر_22.jpg"
   },
   {
     "name": "کیانا بار",
@@ -527,7 +527,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_کیانا_بار_23.svg"
+    "avatar": "avatars/staff_barista_کیانا_بار_23.jpg"
   },
   {
     "name": "ملیکا باریستا",
@@ -537,7 +537,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_ملیکا_باریستا_24.svg"
+    "avatar": "avatars/staff_barista_ملیکا_باریستا_24.jpg"
   },
   {
     "name": "درسا قهوه‌پژوه",
@@ -547,7 +547,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_درسا_قهوهپژوه_25.svg"
+    "avatar": "avatars/staff_barista_درسا_قهوهپژوه_25.jpg"
   },
   {
     "name": "پانته‌آ سالن‌من",
@@ -557,7 +557,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پانتهآ_سالنمن_26.svg"
+    "avatar": "avatars/staff_barista_پانتهآ_سالنمن_26.jpg"
   },
   {
     "name": "شقایق باریستا",
@@ -567,7 +567,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_شقایق_باریستا_27.svg"
+    "avatar": "avatars/staff_barista_شقایق_باریستا_27.jpg"
   },
   {
     "name": "نسترن دم‌آور",
@@ -577,7 +577,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_نسترن_دمآور_28.svg"
+    "avatar": "avatars/staff_barista_نسترن_دمآور_28.jpg"
   },
   {
     "name": "نازنین میزبانی",
@@ -587,7 +587,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_نازنین_میزبانی_29.svg"
+    "avatar": "avatars/staff_barista_نازنین_میزبانی_29.jpg"
   },
   {
     "name": "مهتاب رستر",
@@ -597,7 +597,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مهتاب_رستر_30.svg"
+    "avatar": "avatars/staff_barista_مهتاب_رستر_30.jpg"
   },
   {
     "name": "روژان باریستا",
@@ -607,7 +607,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_روژان_باریستا_31.svg"
+    "avatar": "avatars/staff_barista_روژان_باریستا_31.jpg"
   },
   {
     "name": "پگاه لاته",
@@ -617,7 +617,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پگاه_لاته_32.svg"
+    "avatar": "avatars/staff_barista_پگاه_لاته_32.jpg"
   },
   {
     "name": "پرستو ویتر",
@@ -627,7 +627,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پرستو_ویتر_33.svg"
+    "avatar": "avatars/staff_barista_پرستو_ویتر_33.jpg"
   },
   {
     "name": "شایان باریستا",
@@ -637,7 +637,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_شایان_باریستا_34.svg"
+    "avatar": "avatars/staff_barista_شایان_باریستا_34.jpg"
   },
   {
     "name": "شهرام رستر",
@@ -647,7 +647,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_شهرام_رستر_35.svg"
+    "avatar": "avatars/staff_barista_شهرام_رستر_35.jpg"
   },
   {
     "name": "پیمان ویتر",
@@ -657,7 +657,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پیمان_ویتر_36.svg"
+    "avatar": "avatars/staff_barista_پیمان_ویتر_36.jpg"
   },
   {
     "name": "ارسلان بارمن",
@@ -667,7 +667,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_ارسلان_بارمن_37.svg"
+    "avatar": "avatars/staff_barista_ارسلان_بارمن_37.jpg"
   },
   {
     "name": "مازیار سالن‌کار",
@@ -677,7 +677,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مازیار_سالنکار_38.svg"
+    "avatar": "avatars/staff_barista_مازیار_سالنکار_38.jpg"
   },
   {
     "name": "سروش کافه‌چی",
@@ -687,7 +687,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_سروش_کافهچی_39.svg"
+    "avatar": "avatars/staff_barista_سروش_کافهچی_39.jpg"
   },
   {
     "name": "همایون قهوه",
@@ -697,7 +697,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_همایون_قهوه_40.svg"
+    "avatar": "avatars/staff_barista_همایون_قهوه_40.jpg"
   },
   {
     "name": "حمیدرضا باریستا",
@@ -707,7 +707,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_حمیدرضا_باریستا_41.svg"
+    "avatar": "avatars/staff_barista_حمیدرضا_باریستا_41.jpg"
   },
   {
     "name": "مسعود اسپرسو",
@@ -717,7 +717,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مسعود_اسپرسو_42.svg"
+    "avatar": "avatars/staff_barista_مسعود_اسپرسو_42.jpg"
   },
   {
     "name": "وحید دم‌آور",
@@ -727,7 +727,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_وحید_دمآور_43.svg"
+    "avatar": "avatars/staff_barista_وحید_دمآور_43.jpg"
   },
   {
     "name": "بهنام کاپینگ",
@@ -737,7 +737,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_بهنام_کاپینگ_44.svg"
+    "avatar": "avatars/staff_barista_بهنام_کاپینگ_44.jpg"
   },
   {
     "name": "سامان سالن",
@@ -747,7 +747,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_سامان_سالن_45.svg"
+    "avatar": "avatars/staff_barista_سامان_سالن_45.jpg"
   },
   {
     "name": "پدرام باریستامن",
@@ -757,7 +757,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پدرام_باریستامن_46.svg"
+    "avatar": "avatars/staff_barista_پدرام_باریستامن_46.jpg"
   },
   {
     "name": "کیوان رستر",
@@ -767,7 +767,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_کیوان_رستر_47.svg"
+    "avatar": "avatars/staff_barista_کیوان_رستر_47.jpg"
   },
   {
     "name": "مصطفی ویتر",
@@ -777,7 +777,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مصطفی_ویتر_48.svg"
+    "avatar": "avatars/staff_barista_مصطفی_ویتر_48.jpg"
   },
   {
     "name": "یاشار بارتندر",
@@ -787,7 +787,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_یاشار_بارتندر_49.svg"
+    "avatar": "avatars/staff_barista_یاشار_بارتندر_49.jpg"
   },
   {
     "name": "سیاوش لاته",
@@ -797,7 +797,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_سیاوش_لاته_50.svg"
+    "avatar": "avatars/staff_barista_سیاوش_لاته_50.jpg"
   },
   {
     "name": "بردیا قهوه‌ساز",
@@ -807,7 +807,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_بردیا_قهوهساز_51.svg"
+    "avatar": "avatars/staff_barista_بردیا_قهوهساز_51.jpg"
   },
   {
     "name": "داریوش میزبانی",
@@ -817,7 +817,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_داریوش_میزبانی_52.svg"
+    "avatar": "avatars/staff_barista_داریوش_میزبانی_52.jpg"
   },
   {
     "name": "فرزین سالن‌دار",
@@ -827,7 +827,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_فرزین_سالندار_53.svg"
+    "avatar": "avatars/staff_barista_فرزین_سالندار_53.jpg"
   },
   {
     "name": "شروین رستر",
@@ -837,7 +837,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_شروین_رستر_54.svg"
+    "avatar": "avatars/staff_barista_شروین_رستر_54.jpg"
   },
   {
     "name": "پویان باریستا",
@@ -847,7 +847,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پویان_باریستا_55.svg"
+    "avatar": "avatars/staff_barista_پویان_باریستا_55.jpg"
   },
   {
     "name": "شهروز دم‌آور",
@@ -857,7 +857,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_شهروز_دمآور_56.svg"
+    "avatar": "avatars/staff_barista_شهروز_دمآور_56.jpg"
   },
   {
     "name": "فرهنگ قهوه",
@@ -867,7 +867,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_فرهنگ_قهوه_57.svg"
+    "avatar": "avatars/staff_barista_فرهنگ_قهوه_57.jpg"
   },
   {
     "name": "پرهام بارمن",
@@ -877,7 +877,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_پرهام_بارمن_58.svg"
+    "avatar": "avatars/staff_barista_پرهام_بارمن_58.jpg"
   },
   {
     "name": "کیارش ویتر",
@@ -887,7 +887,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_کیارش_ویتر_59.svg"
+    "avatar": "avatars/staff_barista_کیارش_ویتر_59.jpg"
   },
   {
     "name": "رامین باریستا",
@@ -897,7 +897,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_رامین_باریستا_60.svg"
+    "avatar": "avatars/staff_barista_رامین_باریستا_60.jpg"
   },
   {
     "name": "مانی رستر",
@@ -907,7 +907,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مانی_رستر_61.svg"
+    "avatar": "avatars/staff_barista_مانی_رستر_61.jpg"
   },
   {
     "name": "سهراب سالن‌کار",
@@ -917,7 +917,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_سهراب_سالنکار_62.svg"
+    "avatar": "avatars/staff_barista_سهراب_سالنکار_62.jpg"
   },
   {
     "name": "امیرعلی قهوه",
@@ -927,7 +927,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_امیرعلی_قهوه_63.svg"
+    "avatar": "avatars/staff_barista_امیرعلی_قهوه_63.jpg"
   },
   {
     "name": "کوروش باریستاپرو",
@@ -937,7 +937,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_کوروش_باریستاپرو_64.svg"
+    "avatar": "avatars/staff_barista_کوروش_باریستاپرو_64.jpg"
   },
   {
     "name": "آرین لاته",
@@ -947,7 +947,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه داور و سنسوری با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_آرین_لاته_65.svg"
+    "avatar": "avatars/staff_barista_آرین_لاته_65.jpg"
   },
   {
     "name": "ارشیا اسپرسو",
@@ -957,7 +957,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه بیکری و قنادی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_ارشیا_اسپرسو_66.svg"
+    "avatar": "avatars/staff_barista_ارشیا_اسپرسو_66.jpg"
   },
   {
     "name": "مهران ویتر",
@@ -967,7 +967,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه باریستا تخصصی با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_مهران_ویتر_67.svg"
+    "avatar": "avatars/staff_barista_مهران_ویتر_67.jpg"
   },
   {
     "name": "آیدین قهوه‌پژوه",
@@ -977,7 +977,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه رستر قهوه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_آیدین_قهوهپژوه_68.svg"
+    "avatar": "avatars/staff_barista_آیدین_قهوهپژوه_68.jpg"
   },
   {
     "name": "البرز کافه‌من",
@@ -987,7 +987,7 @@
     "bio": "متخصص و فعال باسابقه در حوزه سرپرست سالن و ویتر با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_البرز_کافهمن_69.svg"
+    "avatar": "avatars/staff_barista_البرز_کافهمن_69.jpg"
   },
   {
     "name": "بهزاد اسپرسوبار",
@@ -997,6 +997,6 @@
     "bio": "متخصص و فعال باسابقه در حوزه مدیریت کافه با سابقه همکاری در کافه‌های شاخص ایران و تسلط بر استانداردهای میزبانی و قهوه.",
     "followers": "38K",
     "engagement": "5.9%",
-    "avatar": "avatars/staff_barista_بهزاد_اسپرسوبار_70.svg"
+    "avatar": "avatars/staff_barista_بهزاد_اسپرسوبار_70.jpg"
   }
 ]
