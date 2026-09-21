@@ -134,17 +134,21 @@
 
     <!-- Main Tab Selector -->
     <div class="inline-flex p-1.5 rounded-2xl bg-slate-900 border border-slate-800 mb-8 shadow-2xl flex-wrap justify-center gap-1">
-      <button id="tabProjectors" class="tab-btn active px-5 py-2.5 rounded-xl text-sm font-semibold transition flex items-center gap-2">
+      <button id="tabCities" class="tab-btn active px-5 py-2.5 rounded-xl text-sm font-semibold transition flex items-center gap-2">
+        <i class="fa-solid fa-city text-amber-400"></i>
+        <span>آمار تفکیک شهرها و دایرکتوری کل (۱۰۹ شهر)</span>
+      </button>
+      <button id="tabProjectors" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-400 hover:text-white transition flex items-center gap-2">
         <i class="fa-solid fa-video text-emerald-400"></i>
-        <span>کافه‌های پروژکتوردار و اکران (۵,۷۵۴ مکان)</span>
+        <span>کافه‌های پروژکتوردار (۵,۷۵۴ مکان)</span>
       </button>
       <button id="tabCafes" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-400 hover:text-white transition flex items-center gap-2">
         <i class="fa-solid fa-store text-amber-400"></i>
-        <span>۱۰۰ کافه برتر برند</span>
+        <span>۱۰۰ کافه برند</span>
       </button>
       <button id="tabStaff" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-400 hover:text-white transition flex items-center gap-2">
         <i class="fa-solid fa-users text-sky-400"></i>
-        <span>متخصصین و باریستاها (۱۰۰ نفر)</span>
+        <span>متخصصین (۱۰۰ نفر)</span>
       </button>
       <a href="./api/v1/projector-cafes.csv" download class="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 transition flex items-center gap-1.5 border border-slate-700">
         <i class="fa-solid fa-file-csv text-emerald-400"></i>
@@ -168,8 +172,85 @@
   <!-- Content Section -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 pb-20 flex-1 w-full">
     
+    <!-- Cities Explorer & Stats View -->
+    <div id="citiesView" class="mb-12">
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-map-location-dot text-amber-400"></i>
+            <span>تعداد و آمار کافه‌ها به تفکیک شهرهای ایران</span>
+          </h3>
+          <p class="text-xs text-slate-400 mt-1">
+            مشاهده تعداد کل کافه‌ها، کافه‌های دارای ویدیو پروژکتور، شماره تماس، اینستاگرام و منو در هر شهر به همراه دانلود مستقیم دیتای هر شهر
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="btnExportCurrentView" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-500 transition flex items-center gap-1.5 shadow-lg shadow-emerald-950/50">
+            <i class="fa-solid fa-file-export"></i>
+            <span id="exportBtnLabel">خروجی اکسل / CSV</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- City Cards / Stats Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-8" id="topCitiesStatsGrid">
+        <!-- Injected via JS -->
+      </div>
+
+      <!-- Active City Banner & Controls -->
+      <div class="glass-box rounded-2xl p-4 sm:p-5 mb-6 border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-bold text-lg">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400">شهر فعال:</span>
+              <h4 class="text-base font-bold text-white" id="selectedCityTitle">همه شهرهای ایران</h4>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700" id="selectedCityTotal">۱۹,۸۳۳ کافه</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-0.5" id="selectedCityDetails">برای فیلتر و مشاهده کافه‌ها روی شهر مورد نظر کلیک کنید یا از لیست زیر انتخاب فرمایید.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 flex-wrap">
+          <select id="allCitySelect" class="bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500">
+            <option value="all">همه شهرها (۱۹,۸۳۳ کافه)</option>
+          </select>
+          <select id="cityTypeFilter" class="bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500">
+            <option value="all">همه کافه‌ها</option>
+            <option value="projector">فقط کافه‌های دارای پروژکتور</option>
+            <option value="phone">فقط کافه‌های دارای شماره تماس</option>
+            <option value="instagram">فقط کافه‌های دارای اینستاگرام</option>
+            <option value="menu">فقط کافه‌های دارای منوی آنلاین</option>
+          </select>
+          <button id="btnDownloadCityJson" class="px-3 py-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition flex items-center gap-1" title="دانلود دیتای کامل شهر با فرمت JSON">
+            <i class="fa-solid fa-download text-amber-400"></i>
+            <span>JSON شهر</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- City Cafes Grid -->
+      <div id="cityCafesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="col-span-full text-center py-12 text-slate-500">
+          <i class="fa-solid fa-spinner fa-spin text-2xl text-amber-500 mb-2"></i>
+          <p class="text-xs">در حال بارگذاری اطلاعات شهرها...</p>
+        </div>
+      </div>
+
+      <!-- City Load More -->
+      <div class="mt-8 text-center" id="cityLoadMoreContainer" style="display: none;">
+        <button id="btnCityLoadMore" class="px-6 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-300 hover:text-white transition inline-flex items-center gap-2">
+          <span>مشاهده کافه‌های بیشتر این شهر</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+
     <!-- Projector / Screening Cafes Live Search & Grid View -->
-    <div id="projectorsView" class="mb-12">
+    <div id="projectorsView" class="mb-12 hidden">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <div>
           <h3 class="text-lg font-bold text-white flex items-center gap-2">
@@ -6437,13 +6518,33 @@
   </footer>
 
   <script>
+    // Tab Elements
+    const tabCities = document.getElementById('tabCities');
     const tabProjectors = document.getElementById('tabProjectors');
     const tabCafes = document.getElementById('tabCafes');
     const tabStaff = document.getElementById('tabStaff');
+    
+    // View Containers
+    const citiesView = document.getElementById('citiesView');
     const projectorsView = document.getElementById('projectorsView');
     const cafesView = document.getElementById('cafesView');
     const staffView = document.getElementById('staffView');
+
+    // Controls
     const searchInput = document.getElementById('searchInput');
+    const topCitiesStatsGrid = document.getElementById('topCitiesStatsGrid');
+    const allCitySelect = document.getElementById('allCitySelect');
+    const cityTypeFilter = document.getElementById('cityTypeFilter');
+    const selectedCityTitle = document.getElementById('selectedCityTitle');
+    const selectedCityTotal = document.getElementById('selectedCityTotal');
+    const selectedCityDetails = document.getElementById('selectedCityDetails');
+    const cityCafesGrid = document.getElementById('cityCafesGrid');
+    const btnCityLoadMore = document.getElementById('btnCityLoadMore');
+    const cityLoadMoreContainer = document.getElementById('cityLoadMoreContainer');
+    const btnDownloadCityJson = document.getElementById('btnDownloadCityJson');
+    const btnExportCurrentView = document.getElementById('btnExportCurrentView');
+
+    // Projector view elements
     const cityFilter = document.getElementById('cityFilter');
     const priorityFilter = document.getElementById('priorityFilter');
     const projectorsGrid = document.getElementById('projectorsGrid');
@@ -6451,11 +6552,16 @@
     const btnLoadMore = document.getElementById('btnLoadMore');
     const loadMoreContainer = document.getElementById('loadMoreContainer');
 
-    let currentTab = 'projectors';
+    let currentTab = 'cities';
+    let citiesStats = [];
+    let currentCityData = [];
+    let filteredCityCafes = [];
+    let displayedCityCount = 0;
+    const CITY_PAGE_SIZE = 30;
+
     let allProjectors = [];
     let filteredProjectors = [];
-    let displayedCount = 0;
-    const PAGE_SIZE = 30;
+    let displayedProjCount = 0;
 
     function escapeHtml(str) {
       if (!str) return '';
@@ -6467,36 +6573,163 @@
         .replace(/'/g, '&#039;');
     }
 
-    async function loadProjectorsData() {
+    // 1. Load Cities Stats
+    async function initCitiesExplorer() {
       try {
-        const res = await fetch('./api/v1/projector-cafes.json');
-        if (!res.ok) throw new Error('Failed to load JSON');
-        allProjectors = await res.json();
-        applyProjectorFilters();
+        const res = await fetch('./api/v1/cities_stats.json');
+        if (!res.ok) throw new Error('Failed to load cities_stats.json');
+        citiesStats = await res.json();
+        
+        renderTopCitiesPills();
+        populateCitySelectDropdown();
+        
+        // Load default city: Tehran
+        await selectCity('tehran', 'تهران');
       } catch (err) {
-        projectorsGrid.replaceChildren();
+        console.error('Failed init cities:', err);
+        cityCafesGrid.replaceChildren();
         const errDiv = document.createElement('div');
         errDiv.className = 'col-span-full text-center py-8 text-rose-400 text-xs';
-        errDiv.textContent = 'خطا در بارگذاری اطلاعات کافه‌ها. لطفاً مجدداً تلاش کنید.';
-        projectorsGrid.appendChild(errDiv);
+        errDiv.textContent = 'خطا در بارگذاری آمار شهرها.';
+        cityCafesGrid.appendChild(errDiv);
       }
     }
 
-    function createCardElement(cafe) {
-      const priorityLabel = cafe.projector_priority === 1 ? 'اکران سینمایی و فیلم' :
-                            cafe.projector_priority === 2 ? 'بردگیم و مافیا' : 'پخش فوتبال و سنتی';
-      const priorityClass = cafe.projector_priority === 1 ? 'bg-emerald-950/60 text-emerald-300 border-emerald-800/50' :
-                            cafe.projector_priority === 2 ? 'bg-amber-950/60 text-amber-300 border-amber-800/50' : 'bg-sky-950/60 text-sky-300 border-sky-800/50';
+    function renderTopCitiesPills() {
+      topCitiesStatsGrid.replaceChildren();
+      // Take top 6 cities
+      const top6 = citiesStats.slice(0, 6);
+      top6.forEach(c => {
+        const pill = document.createElement('div');
+        pill.className = 'glass-box rounded-xl p-3 text-center cursor-pointer hover:border-amber-500 transition';
+        pill.innerHTML = `
+          <div class="text-sm font-bold text-white mb-0.5">${escapeHtml(c.city)}</div>
+          <div class="text-xs font-mono font-black text-amber-400">${c.total_cafes.toLocaleString()} کافه</div>
+          <div class="text-[10px] text-emerald-400 mt-0.5">${c.projector_cafes} پروژکتور</div>
+        `;
+        pill.addEventListener('click', () => selectCity(c.slug, c.city));
+        topCitiesStatsGrid.appendChild(pill);
+      });
+    }
 
+    function populateCitySelectDropdown() {
+      allCitySelect.replaceChildren();
+      const allOpt = document.createElement('option');
+      allOpt.value = 'all';
+      allOpt.textContent = 'همه شهرهای ایران (کل ۱۹,۸۳۳ کافه)';
+      allCitySelect.appendChild(allOpt);
+
+      citiesStats.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c.slug;
+        opt.textContent = `${c.city} (${c.total_cafes.toLocaleString()} کافه - ${c.projector_cafes} پروژکتور)`;
+        allCitySelect.appendChild(opt);
+      });
+
+      allCitySelect.value = 'tehran';
+    }
+
+    async function selectCity(slug, cityName) {
+      allCitySelect.value = slug;
+      selectedCityTitle.textContent = cityName;
+      
+      const stat = citiesStats.find(x => x.slug === slug || x.city === cityName);
+      if (stat) {
+        selectedCityTotal.textContent = `${stat.total_cafes.toLocaleString()} کافه`;
+        selectedCityDetails.textContent = `پروژکتوردار: ${stat.projector_cafes} | دارای تلفن: ${stat.phone_count} | اینستاگرام: ${stat.ig_count} | منوی آنلاین: ${stat.menu_count}`;
+      } else {
+        selectedCityTotal.textContent = 'کافه';
+        selectedCityDetails.textContent = '';
+      }
+
+      cityCafesGrid.replaceChildren();
+      const loading = document.createElement('div');
+      loading.className = 'col-span-full text-center py-12 text-slate-400 text-xs';
+      loading.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-2xl text-amber-500 mb-2"></i><p>در حال بارگذاری کافه‌های ' + escapeHtml(cityName) + '...</p>';
+      cityCafesGrid.appendChild(loading);
+
+      try {
+        const endpoint = slug === 'all' ? './api/v1/projector-cafes.json' : `./api/v1/cities/${slug}.json`;
+        const res = await fetch(endpoint);
+        if (!res.ok) throw new Error('Failed to load city json');
+        currentCityData = await res.json();
+        applyCityFilters();
+      } catch (err) {
+        cityCafesGrid.replaceChildren();
+        const errDiv = document.createElement('div');
+        errDiv.className = 'col-span-full text-center py-8 text-rose-400 text-xs';
+        errDiv.textContent = `داده‌های کافه‌های ${cityName} در دسترس نیست.`;
+        cityCafesGrid.appendChild(errDiv);
+      }
+    }
+
+    function applyCityFilters() {
+      const query = searchInput.value.toLowerCase().trim();
+      const filterType = cityTypeFilter.value;
+
+      filteredCityCafes = currentCityData.filter(c => {
+        if (filterType === 'projector' && !c.has_projector) return false;
+        if (filterType === 'phone' && !c.telephone) return false;
+        if (filterType === 'instagram' && !c.instagram) return false;
+        if (filterType === 'menu' && !c.menu_url) return false;
+
+        if (query) {
+          const matchName = (c.name || '').toLowerCase().includes(query);
+          const matchAddr = (c.address || '').toLowerCase().includes(query);
+          const matchTel = (c.telephone || '').includes(query);
+          const matchIg = (c.instagram || '').toLowerCase().includes(query);
+          if (!matchName && !matchAddr && !matchTel && !matchIg) return false;
+        }
+        return true;
+      });
+
+      displayedCityCount = 0;
+      cityCafesGrid.replaceChildren();
+      loadMoreCityCards();
+    }
+
+    function loadMoreCityCards() {
+      const nextBatch = filteredCityCafes.slice(displayedCityCount, displayedCityCount + CITY_PAGE_SIZE);
+      if (nextBatch.length === 0 && displayedCityCount === 0) {
+        cityCafesGrid.replaceChildren();
+        const emptyDiv = document.createElement('div');
+        emptyDiv.className = 'col-span-full text-center py-12 text-slate-400 text-xs';
+        emptyDiv.textContent = 'هیچ کافه‌ای با مشخصات فیلتر شده در این شهر یافت نشد.';
+        cityCafesGrid.appendChild(emptyDiv);
+        cityLoadMoreContainer.style.display = 'none';
+        return;
+      }
+
+      const fragment = document.createDocumentFragment();
+      for (const cafe of nextBatch) {
+        fragment.appendChild(createUniversalCard(cafe));
+      }
+      cityCafesGrid.appendChild(fragment);
+      displayedCityCount += nextBatch.length;
+
+      if (displayedCityCount >= filteredCityCafes.length) {
+        cityLoadMoreContainer.style.display = 'none';
+      } else {
+        cityLoadMoreContainer.style.display = 'block';
+      }
+    }
+
+    function createUniversalCard(cafe) {
       const card = document.createElement('div');
       card.className = 'cafe-card rounded-2xl p-5 flex flex-col justify-between';
-      card.setAttribute('data-type', 'projector');
 
       const safeName = escapeHtml(cafe.name);
       const safeCity = escapeHtml(cafe.city || 'ایران');
       const safeDistrict = cafe.district ? ' (' + escapeHtml(cafe.district) + ')' : '';
-      const safeAddr = escapeHtml(cafe.address || cafe.screening_type || 'مجهز به پرده عریض و ویدیو پروژکتور سالنی جهت پخش و اکران رویدادها.');
-      const safeHardware = cafe.screen_hardware ? `<div class="text-[11px] text-slate-400 flex items-center gap-1 mt-1.5 truncate"><i class="fa-solid fa-tv text-[10px] text-emerald-400"></i><span>تجهیزات: ${escapeHtml(cafe.screen_hardware)}</span></div>` : '';
+      const safeAddr = escapeHtml(cafe.address || 'آدرس ثبت شده در پایگاه داده');
+
+      const projectorBadge = cafe.has_projector ? `
+        <span class="inline-block text-[10px] px-2 py-0.5 rounded border bg-emerald-950/60 text-emerald-300 border-emerald-800/50 flex-shrink-0">
+          <i class="fa-solid fa-video text-[9px] ml-1"></i>پروژکتوردار
+        </span>` : `
+        <span class="inline-block text-[10px] px-2 py-0.5 rounded border bg-slate-900 text-slate-400 border-slate-700 flex-shrink-0">
+          کافی‌شاپ
+        </span>`;
 
       const phoneHtml = cafe.telephone ? `
         <a href="tel:${escapeHtml(cafe.telephone)}" class="text-slate-300 hover:text-emerald-400 flex items-center gap-1" title="تماس مستقیم">
@@ -6528,7 +6761,6 @@
           <i class="fa-solid fa-map-location-dot"></i>
         </a>` : '';
 
-      // Template with escaped inputs
       card.innerHTML = `
         <div>
           <div class="flex items-start justify-between gap-2 mb-3">
@@ -6538,16 +6770,13 @@
                 <i class="fa-solid fa-location-dot text-[11px] ml-1"></i>${safeCity}${safeDistrict}
               </p>
             </div>
-            <span class="inline-block text-[10px] px-2 py-0.5 rounded border flex-shrink-0 ${priorityClass}">
-              ${priorityLabel}
-            </span>
+            ${projectorBadge}
           </div>
 
           <p class="text-xs text-slate-400 leading-relaxed line-clamp-2 mb-3">
             ${safeAddr}
           </p>
 
-          ${safeHardware}
           <div class="flex items-center gap-2 mt-2 flex-wrap">
             ${menuHtml}
           </div>
@@ -6565,6 +6794,77 @@
         </div>`;
 
       return card;
+    }
+
+    // CSV Export function for current filtered items
+    function exportFilteredCafesToCSV() {
+      const activeData = currentTab === 'cities' ? filteredCityCafes : filteredProjectors;
+      if (!activeData || activeData.length === 0) {
+        alert('هیچ داده‌ای برای خروجی وجود ندارد.');
+        return;
+      }
+
+      const headers = ['نام کافه', 'شهر', 'آدرس', 'تلفن', 'اینستاگرام', 'منوی آنلاین', 'دارای پروژکتور', 'امتیاز'];
+      const csvRows = [headers.join(',')];
+
+      activeData.forEach(c => {
+        const row = [
+          `"${(c.name || '').replace(/"/g, '""')}"`,
+          `"${(c.city || '').replace(/"/g, '""')}"`,
+          `"${(c.address || '').replace(/"/g, '""')}"`,
+          `"${(c.telephone || '').replace(/"/g, '""')}"`,
+          `"${(c.instagram || '').replace(/"/g, '""')}"`,
+          `"${(c.menu_url || '').replace(/"/g, '""')}"`,
+          `"${c.has_projector ? 'بله' : 'خیر'}"`,
+          `"${c.rating || ''}"`
+        ];
+        csvRows.push(row.join(','));
+      });
+
+      const blob = new Blob(['﻿' + csvRows.join('
+')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', `cafes_export_${new Date().toISOString().slice(0,10)}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    btnExportCurrentView.addEventListener('click', exportFilteredCafesToCSV);
+    btnCityLoadMore.addEventListener('click', loadMoreCityCards);
+    allCitySelect.addEventListener('change', (e) => {
+      const slug = e.target.value;
+      const text = e.target.options[e.target.selectedIndex].text.split('(')[0].trim();
+      selectCity(slug, text);
+    });
+    cityTypeFilter.addEventListener('change', applyCityFilters);
+
+    btnDownloadCityJson.addEventListener('click', () => {
+      const slug = allCitySelect.value;
+      const jsonUrl = slug === 'all' ? './api/v1/all-cafes.min.json' : `./api/v1/cities/${slug}.json`;
+      window.open(jsonUrl, '_blank');
+    });
+
+    // 2. Projectors View Functions
+    async function loadProjectorsData() {
+      if (allProjectors.length > 0) {
+        applyProjectorFilters();
+        return;
+      }
+      try {
+        const res = await fetch('./api/v1/projector-cafes.json');
+        if (!res.ok) throw new Error('Failed to load JSON');
+        allProjectors = await res.json();
+        applyProjectorFilters();
+      } catch (err) {
+        projectorsGrid.replaceChildren();
+        const errDiv = document.createElement('div');
+        errDiv.className = 'col-span-full text-center py-8 text-rose-400 text-xs';
+        errDiv.textContent = 'خطا در بارگذاری اطلاعات کافه‌ها.';
+        projectorsGrid.appendChild(errDiv);
+      }
     }
 
     function applyProjectorFilters() {
@@ -6587,18 +6887,18 @@
       });
 
       projectorCountBadge.textContent = `${filteredProjectors.length.toLocaleString()} مکان یافت شد`;
-      displayedCount = 0;
+      displayedProjCount = 0;
       projectorsGrid.replaceChildren();
-      loadMoreCards();
+      loadMoreProjCards();
     }
 
-    function loadMoreCards() {
-      const nextBatch = filteredProjectors.slice(displayedCount, displayedCount + PAGE_SIZE);
-      if (nextBatch.length === 0 && displayedCount === 0) {
+    function loadMoreProjCards() {
+      const nextBatch = filteredProjectors.slice(displayedProjCount, displayedProjCount + CITY_PAGE_SIZE);
+      if (nextBatch.length === 0 && displayedProjCount === 0) {
         projectorsGrid.replaceChildren();
         const emptyDiv = document.createElement('div');
         emptyDiv.className = 'col-span-full text-center py-12 text-slate-400 text-xs';
-        emptyDiv.textContent = 'هیچ موردی مطابق با فیلترهای انتخابی یافت نشد.';
+        emptyDiv.textContent = 'هیچ موردی با فیلترهای انتخابی یافت نشد.';
         projectorsGrid.appendChild(emptyDiv);
         loadMoreContainer.style.display = 'none';
         return;
@@ -6606,44 +6906,47 @@
 
       const fragment = document.createDocumentFragment();
       for (const cafe of nextBatch) {
-        fragment.appendChild(createCardElement(cafe));
+        fragment.appendChild(createUniversalCard(cafe));
       }
       projectorsGrid.appendChild(fragment);
-      displayedCount += nextBatch.length;
+      displayedProjCount += nextBatch.length;
 
-      if (displayedCount >= filteredProjectors.length) {
+      if (displayedProjCount >= filteredProjectors.length) {
         loadMoreContainer.style.display = 'none';
       } else {
         loadMoreContainer.style.display = 'block';
       }
     }
 
-    btnLoadMore.addEventListener('click', loadMoreCards);
+    btnLoadMore.addEventListener('click', loadMoreProjCards);
     cityFilter.addEventListener('change', applyProjectorFilters);
     priorityFilter.addEventListener('change', applyProjectorFilters);
 
-    tabProjectors.addEventListener('click', () => {
-      currentTab = 'projectors';
-      tabProjectors.classList.add('active');
-      tabProjectors.classList.remove('text-slate-400');
-      tabCafes.classList.remove('active');
-      tabCafes.classList.add('text-slate-400');
-      tabStaff.classList.remove('active');
-      tabStaff.classList.add('text-slate-400');
-      projectorsView.classList.remove('hidden');
+    // Tab Navigation Handling
+    tabCities.addEventListener('click', () => {
+      currentTab = 'cities';
+      setActiveTabBtn(tabCities);
+      citiesView.classList.remove('hidden');
+      projectorsView.classList.add('hidden');
       cafesView.classList.add('hidden');
       staffView.classList.add('hidden');
     });
 
+    tabProjectors.addEventListener('click', () => {
+      currentTab = 'projectors';
+      setActiveTabBtn(tabProjectors);
+      projectorsView.classList.remove('hidden');
+      citiesView.classList.add('hidden');
+      cafesView.classList.add('hidden');
+      staffView.classList.add('hidden');
+      loadProjectorsData();
+    });
+
     tabCafes.addEventListener('click', () => {
       currentTab = 'cafes';
-      tabCafes.classList.add('active');
-      tabCafes.classList.remove('text-slate-400');
-      tabProjectors.classList.remove('active');
-      tabProjectors.classList.add('text-slate-400');
-      tabStaff.classList.remove('active');
-      tabStaff.classList.add('text-slate-400');
+      setActiveTabBtn(tabCafes);
       cafesView.classList.remove('hidden');
+      citiesView.classList.add('hidden');
       projectorsView.classList.add('hidden');
       staffView.classList.add('hidden');
       filterStaticItems();
@@ -6651,17 +6954,22 @@
 
     tabStaff.addEventListener('click', () => {
       currentTab = 'staff';
-      tabStaff.classList.add('active');
-      tabStaff.classList.remove('text-slate-400');
-      tabProjectors.classList.remove('active');
-      tabProjectors.classList.add('text-slate-400');
-      tabCafes.classList.remove('active');
-      tabCafes.classList.add('text-slate-400');
+      setActiveTabBtn(tabStaff);
       staffView.classList.remove('hidden');
+      citiesView.classList.add('hidden');
       projectorsView.classList.add('hidden');
       cafesView.classList.add('hidden');
       filterStaticItems();
     });
+
+    function setActiveTabBtn(btn) {
+      [tabCities, tabProjectors, tabCafes, tabStaff].forEach(b => {
+        b.classList.remove('active');
+        b.classList.add('text-slate-400');
+      });
+      btn.classList.add('active');
+      btn.classList.remove('text-slate-400');
+    }
 
     function filterStaticItems() {
       const query = searchInput.value.toLowerCase().trim();
@@ -6687,14 +6995,17 @@
     }
 
     searchInput.addEventListener('input', () => {
-      if (currentTab === 'projectors') {
+      if (currentTab === 'cities') {
+        applyCityFilters();
+      } else if (currentTab === 'projectors') {
         applyProjectorFilters();
       } else {
         filterStaticItems();
       }
     });
 
-    loadProjectorsData();
+    // Start
+    initCitiesExplorer();
   </script>
 </body>
 </html>
