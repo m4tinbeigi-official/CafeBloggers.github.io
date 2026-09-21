@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-09-21",
+  "total_cafes": 19833,
+  "total_projector_cafes": 5754,
+  "has_phone_count": 12220,
+  "has_instagram_count": 937,
+  "has_menu_count": 113,
+  "has_website_count": 1075,
+  "provinces_count": 105,
+  "endpoints": {
+    "projector_cafes_json": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/projector-cafes.json",
+    "projector_cafes_csv": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/projector-cafes.csv",
+    "all_cafes_min_json": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/all-cafes.min.json",
+    "cities_index": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities.json",
+    "city_template": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/{city_slug}.json"
+  }
+}

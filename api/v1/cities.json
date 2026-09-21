@@ -1,0 +1,765 @@
+[
+  {
+    "city": "تهران",
+    "slug": "tehran",
+    "total_cafes": 7113,
+    "projector_cafes": 1730,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/tehran.json"
+  },
+  {
+    "city": "اصفهان",
+    "slug": "isfahan",
+    "total_cafes": 1737,
+    "projector_cafes": 403,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/isfahan.json"
+  },
+  {
+    "city": "کرج",
+    "slug": "karaj",
+    "total_cafes": 1473,
+    "projector_cafes": 409,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/karaj.json"
+  },
+  {
+    "city": "مشهد",
+    "slug": "mashhad",
+    "total_cafes": 1397,
+    "projector_cafes": 684,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/mashhad.json"
+  },
+  {
+    "city": "شیراز",
+    "slug": "shiraz",
+    "total_cafes": 1262,
+    "projector_cafes": 339,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/shiraz.json"
+  },
+  {
+    "city": "اهواز",
+    "slug": "ahvaz",
+    "total_cafes": 1108,
+    "projector_cafes": 199,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/ahvaz.json"
+  },
+  {
+    "city": "رشت",
+    "slug": "rasht",
+    "total_cafes": 870,
+    "projector_cafes": 187,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/rasht.json"
+  },
+  {
+    "city": "قم",
+    "slug": "qom",
+    "total_cafes": 800,
+    "projector_cafes": 320,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/qom.json"
+  },
+  {
+    "city": "تبریز",
+    "slug": "tabriz",
+    "total_cafes": 595,
+    "projector_cafes": 180,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/tabriz.json"
+  },
+  {
+    "city": "کرمان",
+    "slug": "kerman",
+    "total_cafes": 334,
+    "projector_cafes": 133,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/kerman.json"
+  },
+  {
+    "city": "یزد",
+    "slug": "yazd",
+    "total_cafes": 319,
+    "projector_cafes": 98,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/yazd.json"
+  },
+  {
+    "city": "بندرعباس",
+    "slug": "bandar-abbas",
+    "total_cafes": 224,
+    "projector_cafes": 67,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/bandar-abbas.json"
+  },
+  {
+    "city": "همدان",
+    "slug": "hamedan",
+    "total_cafes": 199,
+    "projector_cafes": 100,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/hamedan.json"
+  },
+  {
+    "city": "کرمانشاه",
+    "slug": null,
+    "total_cafes": 165,
+    "projector_cafes": 90,
+    "api_url": null
+  },
+  {
+    "city": "زنجان",
+    "slug": null,
+    "total_cafes": 162,
+    "projector_cafes": 101,
+    "api_url": null
+  },
+  {
+    "city": "گرگان",
+    "slug": "gorgan",
+    "total_cafes": 152,
+    "projector_cafes": 35,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/gorgan.json"
+  },
+  {
+    "city": "کاشان",
+    "slug": null,
+    "total_cafes": 115,
+    "projector_cafes": 75,
+    "api_url": null
+  },
+  {
+    "city": "قزوین",
+    "slug": "qazvin",
+    "total_cafes": 113,
+    "projector_cafes": 53,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/qazvin.json"
+  },
+  {
+    "city": "بابلسر",
+    "slug": null,
+    "total_cafes": 107,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "ساری",
+    "slug": "sari",
+    "total_cafes": 106,
+    "projector_cafes": 25,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/sari.json"
+  },
+  {
+    "city": "لاهیجان",
+    "slug": null,
+    "total_cafes": 98,
+    "projector_cafes": 40,
+    "api_url": null
+  },
+  {
+    "city": "بوشهر",
+    "slug": "bushehr",
+    "total_cafes": 94,
+    "projector_cafes": 65,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/bushehr.json"
+  },
+  {
+    "city": "نوشهر",
+    "slug": null,
+    "total_cafes": 93,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "تنکابن",
+    "slug": null,
+    "total_cafes": 91,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "سنندج",
+    "slug": null,
+    "total_cafes": 89,
+    "projector_cafes": 47,
+    "api_url": null
+  },
+  {
+    "city": "اراک",
+    "slug": null,
+    "total_cafes": 83,
+    "projector_cafes": 25,
+    "api_url": null
+  },
+  {
+    "city": "ایلام",
+    "slug": null,
+    "total_cafes": 78,
+    "projector_cafes": 35,
+    "api_url": null
+  },
+  {
+    "city": "شهرکرد",
+    "slug": null,
+    "total_cafes": 70,
+    "projector_cafes": 21,
+    "api_url": null
+  },
+  {
+    "city": "خرم‌آباد",
+    "slug": null,
+    "total_cafes": 69,
+    "projector_cafes": 36,
+    "api_url": null
+  },
+  {
+    "city": "آمل",
+    "slug": null,
+    "total_cafes": 63,
+    "projector_cafes": 24,
+    "api_url": null
+  },
+  {
+    "city": "چالوس",
+    "slug": null,
+    "total_cafes": 58,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "بابل",
+    "slug": null,
+    "total_cafes": 55,
+    "projector_cafes": 15,
+    "api_url": null
+  },
+  {
+    "city": "زاهدان",
+    "slug": null,
+    "total_cafes": 51,
+    "projector_cafes": 14,
+    "api_url": null
+  },
+  {
+    "city": "بجنورد",
+    "slug": null,
+    "total_cafes": 47,
+    "projector_cafes": 27,
+    "api_url": null
+  },
+  {
+    "city": "رامسر",
+    "slug": null,
+    "total_cafes": 46,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "اردبیل",
+    "slug": null,
+    "total_cafes": 42,
+    "projector_cafes": 21,
+    "api_url": null
+  },
+  {
+    "city": "قائم‌شهر",
+    "slug": null,
+    "total_cafes": 40,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "یاسوج",
+    "slug": null,
+    "total_cafes": 34,
+    "projector_cafes": 9,
+    "api_url": null
+  },
+  {
+    "city": "سمنان",
+    "slug": null,
+    "total_cafes": 34,
+    "projector_cafes": 34,
+    "api_url": null
+  },
+  {
+    "city": "mashhad",
+    "slug": null,
+    "total_cafes": 31,
+    "projector_cafes": 2,
+    "api_url": null
+  },
+  {
+    "city": "shiraz",
+    "slug": null,
+    "total_cafes": 28,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "tabriz",
+    "slug": null,
+    "total_cafes": 24,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "قشم",
+    "slug": null,
+    "total_cafes": 21,
+    "projector_cafes": 21,
+    "api_url": null
+  },
+  {
+    "city": "بیرجند",
+    "slug": null,
+    "total_cafes": 20,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "karaj",
+    "slug": null,
+    "total_cafes": 13,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "Tehran, Iran",
+    "slug": null,
+    "total_cafes": 12,
+    "projector_cafes": 12,
+    "api_url": null
+  },
+  {
+    "city": "isfahan",
+    "slug": null,
+    "total_cafes": 10,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "rasht",
+    "slug": null,
+    "total_cafes": 8,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "کیش",
+    "slug": "kish",
+    "total_cafes": 7,
+    "projector_cafes": 5,
+    "api_url": "https://m4tinbeigi-official.github.io/CafeBloggers.github.io/api/v1/cities/kish.json"
+  },
+  {
+    "city": "Shiraz, Iran",
+    "slug": null,
+    "total_cafes": 5,
+    "projector_cafes": 5,
+    "api_url": null
+  },
+  {
+    "city": "Isfahan",
+    "slug": null,
+    "total_cafes": 3,
+    "projector_cafes": 3,
+    "api_url": null
+  },
+  {
+    "city": "Abadan, Iran",
+    "slug": null,
+    "total_cafes": 2,
+    "projector_cafes": 2,
+    "api_url": null
+  },
+  {
+    "city": "Kermanshah, Iran",
+    "slug": null,
+    "total_cafes": 2,
+    "projector_cafes": 2,
+    "api_url": null
+  },
+  {
+    "city": "Gorgan, Iran",
+    "slug": null,
+    "total_cafes": 2,
+    "projector_cafes": 2,
+    "api_url": null
+  },
+  {
+    "city": "Birjand",
+    "slug": null,
+    "total_cafes": 2,
+    "projector_cafes": 2,
+    "api_url": null
+  },
+  {
+    "city": "Mashhad, Iran",
+    "slug": null,
+    "total_cafes": 2,
+    "projector_cafes": 2,
+    "api_url": null
+  },
+  {
+    "city": "Qom, Iran",
+    "slug": null,
+    "total_cafes": 2,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Kashan",
+    "slug": null,
+    "total_cafes": 2,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "ارومیه",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "Jahrom",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Behbehan, Khuzestan, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Malayer",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Sabzevar",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Qal`Eh-Ye Hormoz, Hormozgan, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Hamedan",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Baneh",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Zahedan",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Mahabad, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Sari, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Arak, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Astaneh-Ye Ashrafiyeh, Gilan, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Tabriz, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Borazjan",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Neyshabur",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Karaj",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Jolfa, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Rudbar",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Shahriyar, Tehran, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Taft, Yazd, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 0,
+    "api_url": null
+  },
+  {
+    "city": "Sanandaj",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Zanjan, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Rasht, Iran",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Subang Jaya",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Bekasi",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Banjarmasin",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Ankara, Turkey",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Jakarta, Indonesia",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Osaka",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Pančevo",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Busan, South Korea",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Hanoi, Vietnam",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Cheras, Selangor",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Johor Bahru",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Malveira, Lisboa, Portugal",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Buenos Aires, Argentina",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Bandung",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Hastings, East Sussex",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Melaka",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Kakkanad, India",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Malá Strana, Hlavní Město Praha, Czech Republic",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Budapest, Hungary",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Bayamo, Cuba",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Kolathur, India",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Mandya",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Vijayawada, India",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Kalimpong, India",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Karpenísi, Evritania, Greece",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Cuenca, Ecuador",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  },
+  {
+    "city": "Sevastopol, Ukraine",
+    "slug": null,
+    "total_cafes": 1,
+    "projector_cafes": 1,
+    "api_url": null
+  }
+]
