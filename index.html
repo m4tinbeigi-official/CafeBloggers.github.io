@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>جامعه کافه‌داران، باریستاها و ویترهای ایران | Cafe Community IR</title>
+  <title>دایرکتوری جامع کافه‌ها، سالن‌های اکران و جامعه باریستاهای ایران | Cafe Community IR</title>
   <meta name="description" content="دایرکتوری جامع معرفی ۱۰۰ کافه شاخص ایران و ۱۰۰ نفر از باریستاها، ویترها، رسترها و عوامل کافه به همراه جامعه و گروه تلگرامی اختصاصی.">
   
   <!-- Tailwind CSS CDN -->
@@ -112,16 +112,48 @@
       فهرست تفکیک‌شده ۱۰۰ کافه معتبر به همراه ۱۰۰ نفر از باریستاهای حرفه‌ای، هدویترها، رسترها و مدیران کافه در ایران.
     </p>
 
+    <!-- Stats Counter Banner -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mb-8">
+      <div class="glass-box rounded-xl p-3 text-center">
+        <div class="text-xl sm:text-2xl font-black text-amber-400 font-mono">19,833</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">کل کافه‌های کشور</div>
+      </div>
+      <div class="glass-box rounded-xl p-3 text-center border-amber-500/30">
+        <div class="text-xl sm:text-2xl font-black text-emerald-400 font-mono">5,754</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">مجهز به ویدیو پروژکتور / اکران</div>
+      </div>
+      <div class="glass-box rounded-xl p-3 text-center">
+        <div class="text-xl sm:text-2xl font-black text-sky-400 font-mono">13,699</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">دارای شماره تماس مستقیم</div>
+      </div>
+      <div class="glass-box rounded-xl p-3 text-center">
+        <div class="text-xl sm:text-2xl font-black text-purple-400 font-mono">Free API</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">دسترسی آزاد و وب‌سرویس REST</div>
+      </div>
+    </div>
+
     <!-- Main Tab Selector -->
-    <div class="inline-flex p-1.5 rounded-2xl bg-slate-900 border border-slate-800 mb-8 shadow-2xl">
-      <button id="tabCafes" class="tab-btn active px-6 py-2.5 rounded-xl text-sm font-semibold transition flex items-center gap-2">
-        <i class="fa-solid fa-store"></i>
-        <span>لیست کافه‌ها (۱۰۰ کافه)</span>
+    <div class="inline-flex p-1.5 rounded-2xl bg-slate-900 border border-slate-800 mb-8 shadow-2xl flex-wrap justify-center gap-1">
+      <button id="tabProjectors" class="tab-btn active px-5 py-2.5 rounded-xl text-sm font-semibold transition flex items-center gap-2">
+        <i class="fa-solid fa-video text-emerald-400"></i>
+        <span>کافه‌های پروژکتوردار و اکران (۵,۷۵۴ مکان)</span>
       </button>
-      <button id="tabStaff" class="tab-btn px-6 py-2.5 rounded-xl text-sm font-semibold text-slate-400 hover:text-white transition flex items-center gap-2">
-        <i class="fa-solid fa-users"></i>
-        <span>پرسنل، باریستاها و ویترها (۱۰۰ نفر)</span>
+      <button id="tabCafes" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-400 hover:text-white transition flex items-center gap-2">
+        <i class="fa-solid fa-store text-amber-400"></i>
+        <span>۱۰۰ کافه برتر برند</span>
       </button>
+      <button id="tabStaff" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-400 hover:text-white transition flex items-center gap-2">
+        <i class="fa-solid fa-users text-sky-400"></i>
+        <span>متخصصین و باریستاها (۱۰۰ نفر)</span>
+      </button>
+      <a href="./api/v1/projector-cafes.csv" download class="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 transition flex items-center gap-1.5 border border-slate-700">
+        <i class="fa-solid fa-file-csv text-emerald-400"></i>
+        <span>دانلود CSV</span>
+      </a>
+      <a href="https://github.com/m4tinbeigi-official/CafeBloggers.github.io#readme" target="_blank" class="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 transition flex items-center gap-1.5 border border-slate-700">
+        <i class="fa-solid fa-code text-purple-400"></i>
+        <span>مستندات API</span>
+      </a>
     </div>
 
     <!-- Search and Filter Bar -->
@@ -136,8 +168,61 @@
   <!-- Content Section -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 pb-20 flex-1 w-full">
     
+    <!-- Projector / Screening Cafes Live Search & Grid View -->
+    <div id="projectorsView" class="mb-12">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-film text-emerald-400"></i>
+            <span>کافه‌ها و مراکز دارای ویدیو پروژکتور و امکانات اکران</span>
+          </h3>
+          <p class="text-xs text-slate-400 mt-1">
+            شامل سالن‌های سینمایی، ایونت‌روم‌های مافیا و بردگیم، و کافه‌های پخش زنده فوتبال با شماره تماس و منوی آنلاین
+          </p>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <select id="cityFilter" class="bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-amber-500">
+            <option value="all">همه شهرها (سراسر کشور)</option>
+            <option value="تهران">تهران (۱,۷۱۷ مکان)</option>
+            <option value="مشهد">مشهد (۶۸۴ مکان)</option>
+            <option value="کرج">کرج (۴۰۹ مکان)</option>
+            <option value="اصفهان">اصفهان (۴۰۳ مکان)</option>
+            <option value="شیراز">شیراز (۳۳۹ مکان)</option>
+            <option value="قم">قم (۳۲۰ مکان)</option>
+            <option value="اهواز">اهواز (۱۹۹ مکان)</option>
+            <option value="رشت">رشت (۱۸۷ مکان)</option>
+            <option value="تبریز">تبریز (۱۸۰ مکان)</option>
+            <option value="کرمان">کرمان (۱۳۳ مکان)</option>
+          </select>
+          <select id="priorityFilter" class="bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-amber-500">
+            <option value="all">همه اولویت‌ها</option>
+            <option value="1">اولویت ۱: اکران سینمایی و فیلم</option>
+            <option value="2">اولویت ۲: بردگیم و مافیا</option>
+            <option value="3">اولویت ۳: فوتبال و سنتی</option>
+          </select>
+          <span class="text-xs text-emerald-400 bg-emerald-950/60 px-3 py-1 rounded-lg border border-emerald-800/50" id="projectorCountBadge">در حال بارگذاری...</span>
+        </div>
+      </div>
+
+      <!-- Live Projectors Grid -->
+      <div id="projectorsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="col-span-full text-center py-12 text-slate-500" id="loadingPlaceholder">
+          <i class="fa-solid fa-spinner fa-spin text-2xl text-amber-500 mb-2"></i>
+          <p class="text-xs">در حال بارگذاری لیست کافه‌های دارای پروژکتور...</p>
+        </div>
+      </div>
+
+      <!-- Pagination / Load More -->
+      <div class="mt-8 text-center" id="loadMoreContainer">
+        <button id="btnLoadMore" class="px-6 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-300 hover:text-white transition inline-flex items-center gap-2">
+          <span>مشاهده موارد بیشتر</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+
     <!-- Cafes Grid View -->
-    <div id="cafesView"><div class="flex items-center justify-between mb-6"><h3 class="text-lg font-bold text-white flex items-center gap-2"><i class="fa-solid fa-mug-hot text-amber-400"></i><span>کافه‌های شاخص و برگزیده ایران</span></h3><span class="text-xs text-amber-400 bg-amber-950/60 px-3 py-1 rounded-lg border border-amber-800/50" id="cafeCountBadge">۱۰۰ کافه ثبت شده</span></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id="cafesView" class="hidden"><div class="flex items-center justify-between mb-6"><h3 class="text-lg font-bold text-white flex items-center gap-2"><i class="fa-solid fa-mug-hot text-amber-400"></i><span>کافه‌های شاخص و برگزیده ایران</span></h3><span class="text-xs text-amber-400 bg-amber-950/60 px-3 py-1 rounded-lg border border-amber-800/50" id="cafeCountBadge">۱۰۰ کافه ثبت شده</span></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="cafe-card rounded-2xl p-5 flex flex-col justify-between" data-category="کافه تخصصی و اسپشیالتی" data-type="cafe">
         <div>
           <div class="flex items-start gap-3.5 mb-4">
@@ -6352,37 +6437,233 @@
   </footer>
 
   <script>
+    const tabProjectors = document.getElementById('tabProjectors');
     const tabCafes = document.getElementById('tabCafes');
     const tabStaff = document.getElementById('tabStaff');
+    const projectorsView = document.getElementById('projectorsView');
     const cafesView = document.getElementById('cafesView');
     const staffView = document.getElementById('staffView');
     const searchInput = document.getElementById('searchInput');
+    const cityFilter = document.getElementById('cityFilter');
+    const priorityFilter = document.getElementById('priorityFilter');
+    const projectorsGrid = document.getElementById('projectorsGrid');
+    const projectorCountBadge = document.getElementById('projectorCountBadge');
+    const btnLoadMore = document.getElementById('btnLoadMore');
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
 
-    let currentTab = 'cafes';
+    let currentTab = 'projectors';
+    let allProjectors = [];
+    let filteredProjectors = [];
+    let displayedCount = 0;
+    const PAGE_SIZE = 30;
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    async function loadProjectorsData() {
+      try {
+        const res = await fetch('./api/v1/projector-cafes.json');
+        if (!res.ok) throw new Error('Failed to load JSON');
+        allProjectors = await res.json();
+        applyProjectorFilters();
+      } catch (err) {
+        projectorsGrid.replaceChildren();
+        const errDiv = document.createElement('div');
+        errDiv.className = 'col-span-full text-center py-8 text-rose-400 text-xs';
+        errDiv.textContent = 'خطا در بارگذاری اطلاعات کافه‌ها. لطفاً مجدداً تلاش کنید.';
+        projectorsGrid.appendChild(errDiv);
+      }
+    }
+
+    function createCardElement(cafe) {
+      const priorityLabel = cafe.projector_priority === 1 ? 'اکران سینمایی و فیلم' :
+                            cafe.projector_priority === 2 ? 'بردگیم و مافیا' : 'پخش فوتبال و سنتی';
+      const priorityClass = cafe.projector_priority === 1 ? 'bg-emerald-950/60 text-emerald-300 border-emerald-800/50' :
+                            cafe.projector_priority === 2 ? 'bg-amber-950/60 text-amber-300 border-amber-800/50' : 'bg-sky-950/60 text-sky-300 border-sky-800/50';
+
+      const card = document.createElement('div');
+      card.className = 'cafe-card rounded-2xl p-5 flex flex-col justify-between';
+      card.setAttribute('data-type', 'projector');
+
+      const safeName = escapeHtml(cafe.name);
+      const safeCity = escapeHtml(cafe.city || 'ایران');
+      const safeDistrict = cafe.district ? ' (' + escapeHtml(cafe.district) + ')' : '';
+      const safeAddr = escapeHtml(cafe.address || cafe.screening_type || 'مجهز به پرده عریض و ویدیو پروژکتور سالنی جهت پخش و اکران رویدادها.');
+      const safeHardware = cafe.screen_hardware ? `<div class="text-[11px] text-slate-400 flex items-center gap-1 mt-1.5 truncate"><i class="fa-solid fa-tv text-[10px] text-emerald-400"></i><span>تجهیزات: ${escapeHtml(cafe.screen_hardware)}</span></div>` : '';
+
+      const phoneHtml = cafe.telephone ? `
+        <a href="tel:${escapeHtml(cafe.telephone)}" class="text-slate-300 hover:text-emerald-400 flex items-center gap-1" title="تماس مستقیم">
+          <i class="fa-solid fa-phone text-[10px] text-emerald-400"></i>
+          <span class="font-mono">${escapeHtml(cafe.telephone)}</span>
+        </a>` : '';
+
+      const cleanIg = cafe.instagram ? cafe.instagram.replace('@', '').replace('/', '') : '';
+      const igHtml = cafe.instagram ? `
+        <a href="https://instagram.com/${encodeURIComponent(cleanIg)}" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 font-mono font-medium flex items-center gap-1">
+          <i class="fa-brands fa-instagram text-xs"></i>
+          <span>${escapeHtml(cafe.instagram)}</span>
+        </a>` : '';
+
+      const menuHtml = cafe.menu_url ? `
+        <a href="${escapeHtml(cafe.menu_url)}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded bg-emerald-950/70 text-emerald-300 border border-emerald-800/50 hover:bg-emerald-900/80 transition" title="مشاهده منوی آنلاین دیجیتال">
+          <i class="fa-solid fa-utensils text-[10px]"></i>
+          <span>منوی آنلاین</span>
+        </a>` : '';
+
+      const ratingHtml = cafe.rating ? `
+        <span class="text-amber-400 font-semibold flex items-center gap-1">
+          <i class="fa-solid fa-star text-[10px]"></i>
+          <span>${cafe.rating}</span>
+        </span>` : '';
+
+      const mapHtml = cafe.map_url ? `
+        <a href="${escapeHtml(cafe.map_url)}" target="_blank" rel="noopener" class="text-slate-400 hover:text-slate-200 transition text-[11px]" title="موقعیت روی نقشه">
+          <i class="fa-solid fa-map-location-dot"></i>
+        </a>` : '';
+
+      // Template with escaped inputs
+      card.innerHTML = `
+        <div>
+          <div class="flex items-start justify-between gap-2 mb-3">
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-base text-white truncate" title="${safeName}">${safeName}</h4>
+              <p class="text-xs text-amber-400 font-medium truncate mt-0.5">
+                <i class="fa-solid fa-location-dot text-[11px] ml-1"></i>${safeCity}${safeDistrict}
+              </p>
+            </div>
+            <span class="inline-block text-[10px] px-2 py-0.5 rounded border flex-shrink-0 ${priorityClass}">
+              ${priorityLabel}
+            </span>
+          </div>
+
+          <p class="text-xs text-slate-400 leading-relaxed line-clamp-2 mb-3">
+            ${safeAddr}
+          </p>
+
+          ${safeHardware}
+          <div class="flex items-center gap-2 mt-2 flex-wrap">
+            ${menuHtml}
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs mt-4">
+          <div class="flex items-center gap-3">
+            ${ratingHtml}
+            ${phoneHtml}
+          </div>
+          <div class="flex items-center gap-2">
+            ${igHtml}
+            ${mapHtml}
+          </div>
+        </div>`;
+
+      return card;
+    }
+
+    function applyProjectorFilters() {
+      const query = searchInput.value.toLowerCase().trim();
+      const city = cityFilter.value;
+      const priority = priorityFilter.value;
+
+      filteredProjectors = allProjectors.filter(c => {
+        if (city !== 'all' && c.city !== city) return false;
+        if (priority !== 'all' && String(c.projector_priority) !== priority) return false;
+        if (query) {
+          const matchName = (c.name || '').toLowerCase().includes(query);
+          const matchCity = (c.city || '').toLowerCase().includes(query);
+          const matchAddr = (c.address || '').toLowerCase().includes(query);
+          const matchTel = (c.telephone || '').includes(query);
+          const matchIg = (c.instagram || '').toLowerCase().includes(query);
+          if (!matchName && !matchCity && !matchAddr && !matchTel && !matchIg) return false;
+        }
+        return true;
+      });
+
+      projectorCountBadge.textContent = `${filteredProjectors.length.toLocaleString()} مکان یافت شد`;
+      displayedCount = 0;
+      projectorsGrid.replaceChildren();
+      loadMoreCards();
+    }
+
+    function loadMoreCards() {
+      const nextBatch = filteredProjectors.slice(displayedCount, displayedCount + PAGE_SIZE);
+      if (nextBatch.length === 0 && displayedCount === 0) {
+        projectorsGrid.replaceChildren();
+        const emptyDiv = document.createElement('div');
+        emptyDiv.className = 'col-span-full text-center py-12 text-slate-400 text-xs';
+        emptyDiv.textContent = 'هیچ موردی مطابق با فیلترهای انتخابی یافت نشد.';
+        projectorsGrid.appendChild(emptyDiv);
+        loadMoreContainer.style.display = 'none';
+        return;
+      }
+
+      const fragment = document.createDocumentFragment();
+      for (const cafe of nextBatch) {
+        fragment.appendChild(createCardElement(cafe));
+      }
+      projectorsGrid.appendChild(fragment);
+      displayedCount += nextBatch.length;
+
+      if (displayedCount >= filteredProjectors.length) {
+        loadMoreContainer.style.display = 'none';
+      } else {
+        loadMoreContainer.style.display = 'block';
+      }
+    }
+
+    btnLoadMore.addEventListener('click', loadMoreCards);
+    cityFilter.addEventListener('change', applyProjectorFilters);
+    priorityFilter.addEventListener('change', applyProjectorFilters);
+
+    tabProjectors.addEventListener('click', () => {
+      currentTab = 'projectors';
+      tabProjectors.classList.add('active');
+      tabProjectors.classList.remove('text-slate-400');
+      tabCafes.classList.remove('active');
+      tabCafes.classList.add('text-slate-400');
+      tabStaff.classList.remove('active');
+      tabStaff.classList.add('text-slate-400');
+      projectorsView.classList.remove('hidden');
+      cafesView.classList.add('hidden');
+      staffView.classList.add('hidden');
+    });
 
     tabCafes.addEventListener('click', () => {
       currentTab = 'cafes';
       tabCafes.classList.add('active');
       tabCafes.classList.remove('text-slate-400');
+      tabProjectors.classList.remove('active');
+      tabProjectors.classList.add('text-slate-400');
       tabStaff.classList.remove('active');
       tabStaff.classList.add('text-slate-400');
       cafesView.classList.remove('hidden');
+      projectorsView.classList.add('hidden');
       staffView.classList.add('hidden');
-      filterItems();
+      filterStaticItems();
     });
 
     tabStaff.addEventListener('click', () => {
       currentTab = 'staff';
       tabStaff.classList.add('active');
       tabStaff.classList.remove('text-slate-400');
+      tabProjectors.classList.remove('active');
+      tabProjectors.classList.add('text-slate-400');
       tabCafes.classList.remove('active');
       tabCafes.classList.add('text-slate-400');
       staffView.classList.remove('hidden');
+      projectorsView.classList.add('hidden');
       cafesView.classList.add('hidden');
-      filterItems();
+      filterStaticItems();
     });
 
-    function filterItems() {
+    function filterStaticItems() {
       const query = searchInput.value.toLowerCase().trim();
       const activeContainer = currentTab === 'cafes' ? cafesView : staffView;
       const cards = activeContainer.querySelectorAll('.cafe-card, .staff-card');
@@ -6400,12 +6681,20 @@
 
       if (currentTab === 'cafes') {
         document.getElementById('cafeCountBadge').textContent = `${visible} کافه نمایش داده شده`;
-      } else {
+      } else if (document.getElementById('staffCountBadge')) {
         document.getElementById('staffCountBadge').textContent = `${visible} متخصص نمایش داده شده`;
       }
     }
 
-    searchInput.addEventListener('input', filterItems);
+    searchInput.addEventListener('input', () => {
+      if (currentTab === 'projectors') {
+        applyProjectorFilters();
+      } else {
+        filterStaticItems();
+      }
+    });
+
+    loadProjectorsData();
   </script>
 </body>
 </html>
